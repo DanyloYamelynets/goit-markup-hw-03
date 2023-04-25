@@ -5,6 +5,7 @@
   --secondary-white-color: #f4f4fd;
   --accent-color: #4d5ae5;
   --accent-hover-color: #404bbf;
+  --border-btn-color: #e7e9fc;
 }
 body {
   color: var(--secondary-text-color);
@@ -51,6 +52,8 @@ body {
   text-decoration: none;
 }
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -80,19 +83,32 @@ body {
 }
 /* Герой */
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 48px;
   color: var(--primary-white-color);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
 }
-.hero,
+.hero {
+  background-color: var(--primary-text-color);
+  text-align: center;
+  /* margin-bottom: 120px; */
+}
+
 .page-footer {
   background-color: var(--primary-text-color);
 }
 /* Секції */
+.section {
+  background-color: aqua;
+  padding-top: 0;
+  padding-bottom: 120px;
+}
 .section-title {
+  margin-top: 0;
+  margin-bottom: 72px;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -102,6 +118,8 @@ body {
   letter-spacing: 0.02em;
 }
 .section-name {
+  margin-top: 0;
+  margin-bottom: 8px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 20px;
@@ -126,9 +144,14 @@ body {
 }
 .section-team {
   background-color: var(--secondary-white-color);
+  padding-top: 0;
+  padding-bottom: 120px;
 }
 .section-workers {
   background-color: #ffffff;
+}
+.img-item {
+  margin-bottom: 120px;
 }
 /* Футер */
 .footer-description {
@@ -151,6 +174,11 @@ button {
   line-height: 1.5;
   align-items: center;
   letter-spacing: 0.04em;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  text-align: center;
+  border: 1px solid transparent;
 }
 .button.primary:hover,
 .button.primary:focus {
@@ -158,6 +186,7 @@ button {
   background-color: var(--accent-hover-color);
 }
 .button.secondary {
+  display: inline-block;
   color: var(--accent-color);
   background-color: var(--secondary-white-color);
   font-family: Roboto, sans-serif;
@@ -167,6 +196,9 @@ button {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
+  border-radius: 4px;
+  padding: 12px 24px;
+  border: 1px solid var(--border-btn-color);
 }
 .button.secondary:hover,
 .button.secondary:focus {
@@ -175,4 +207,25 @@ button {
 }
 .pointer {
   cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
