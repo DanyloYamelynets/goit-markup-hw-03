@@ -90,7 +90,10 @@ body {
 }
 
 /* contacts */
-.address .list {
+.address-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
   gap: 40px;
 }
@@ -126,7 +129,7 @@ address a {
 }
 .hero {
   background-color: var(--primary-text-color);
-  /* text-align: center; */
+  text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -137,8 +140,19 @@ address a {
   padding-bottom: 100px;
 }
 /* Секції */
-.section {
+.section-features {
   padding-top: 120px;
+}
+.features-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+.section-works {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .section-title {
   margin-top: 0;
