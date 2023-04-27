@@ -90,7 +90,7 @@ body {
 }
 
 /* contacts */
-.address-list {
+address .list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -142,6 +142,7 @@ address a {
 /* Секції */
 .section-features {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .features-list {
   padding: 0;
@@ -150,9 +151,18 @@ address a {
   display: flex;
   gap: 24px;
 }
+.feature-name {
+width: calc((100% - 72px) / 4)
+}
 .section-works {
-  padding-top: 120px;
   padding-bottom: 120px;
+}
+.works-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 24px;
 }
 .section-title {
   margin-top: 0;
