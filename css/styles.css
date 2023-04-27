@@ -29,6 +29,7 @@ body {
   font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logo-primary {
   color: var(--primary-text-color);
@@ -38,7 +39,7 @@ body {
   font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
-  margin-right: 76px;
+  
 }
 .logo-footer {
   color: var(--secondary-white-color);
@@ -266,15 +267,9 @@ button {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
+  
 }
-.container-header {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-}
+
 img {
   display: block;
 }
