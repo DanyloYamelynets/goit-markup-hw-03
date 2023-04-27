@@ -39,7 +39,6 @@ body {
   font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
-  
 }
 .logo-footer {
   color: var(--secondary-white-color);
@@ -59,10 +58,9 @@ body {
   list-style: none;
   display: flex;
 }
+
 /* Хедер */
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -107,7 +105,7 @@ address a {
 }
 .address {
   font-style: normal;
-  margin: auto;
+  margin-left: auto;
 }
 
 .address .link:hover,
@@ -121,11 +119,14 @@ address a {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin: auto;
   margin-bottom: 48px;
+  max-width: 496px;
+  text-align: center;
 }
 .hero {
   background-color: var(--primary-text-color);
-  text-align: center;
+  /* text-align: center; */
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -208,6 +209,7 @@ button {
   background-color: var(--primary-text-color);
 }
 .button.primary {
+  display: block;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-family: Roboto, sans-serif;
@@ -220,7 +222,9 @@ button {
   padding: 16px 32px;
   min-width: 169px;
   text-align: center;
-  border: 1px solid transparent;
+  height: 56px;
+  border: none;
+  margin: 0 auto;
 }
 .button.primary:hover,
 .button.primary:focus {
@@ -269,7 +273,6 @@ button {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
- 
 }
 
 img {
