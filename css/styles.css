@@ -32,6 +32,9 @@ body {
   text-transform: uppercase;
   margin-right: 76px;
 }
+footer .logo {
+  margin-bottom: 16px;
+}
 .logo-primary {
   color: var(--primary-text-color);
   font-family: Raleway, sans-serif;
@@ -50,6 +53,7 @@ body {
   line-height: 1.17;
   text-transform: uppercase;
 }
+/* Атрибути */
 .link {
   text-decoration: none;
 }
@@ -58,14 +62,17 @@ body {
   margin: 0;
   list-style: none;
   display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+img {
+  display: block;
 }
 
 /* Хедер */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
 }
-
-/* site nav */
 .main-nav {
   display: flex;
   align-items: center;
@@ -74,7 +81,6 @@ body {
   display: flex;
   gap: 40px;
 }
-
 .site-nav a {
   display: block;
   color: var(--primary-text-color);
@@ -98,7 +104,6 @@ body {
   display: flex;
   gap: 40px;
 }
-
 address a {
   display: flex;
   color: var(--secondary-text-color);
@@ -111,11 +116,11 @@ address a {
   font-style: normal;
   margin-left: auto;
 }
-
 .address .link:hover,
 .address .link:focus {
   color: var(--accent-hover-color);
 }
+
 /* Герой */
 .hero-title {
   color: var(--primary-white-color);
@@ -135,11 +140,6 @@ address a {
   padding-bottom: 188px;
 }
 
-.page-footer {
-  background-color: var(--primary-text-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 /* Секції */
 .section-features {
   padding-top: 120px;
@@ -193,15 +193,14 @@ width: calc((100% - 72px) / 4)
   margin-top: 0;
   margin-bottom: 0;
 }
-.centre {
-  text-align: center;
-}
+
 .section-list {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  
 }
 .section-team {
   background-color: var(--secondary-white-color);
@@ -210,6 +209,7 @@ width: calc((100% - 72px) / 4)
 }
 .section-workers {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list {
   padding: 0;
@@ -218,6 +218,16 @@ width: calc((100% - 72px) / 4)
   display: flex;
   gap: 24px;
 }
+.worker {
+  padding: 32px 16px;
+}
+.section-team .section-name {
+  text-align: center;
+}
+.section-team .section-description {
+  text-align: center;
+}
+/* секція портфоліо */
 .section-portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -227,6 +237,13 @@ width: calc((100% - 72px) / 4)
   margin: 0;
   padding-top: 47px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.portfolio-items {
+  border: 1px solid #E7E9FC;
+  width: 360px;
 }
 /* Футер */
 .footer-description {
@@ -236,6 +253,12 @@ width: calc((100% - 72px) / 4)
   line-height: 1.5;
   max-width: 264px;
 }
+.page-footer {
+  background-color: var(--primary-text-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 /* Кнопки */
 button {
   color: var(--primary-white-color);
@@ -300,6 +323,8 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* контейнер */
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -308,6 +333,3 @@ button {
   padding-right: 15px;
 }
 
-img {
-  display: block;
-}
