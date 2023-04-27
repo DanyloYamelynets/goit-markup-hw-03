@@ -65,6 +65,7 @@ body {
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
+
 /* site nav */
 .main-nav {
   display: flex;
@@ -72,10 +73,9 @@ body {
 }
 .site-nav {
   display: flex;
+  gap: 40px;
 }
-.site-nav .item + .item {
-  margin-left: 40px;
-}
+
 .site-nav a {
   display: block;
   color: var(--primary-text-color);
@@ -92,9 +92,14 @@ body {
 }
 
 /* contacts */
-.address .item + .item {
-  margin-left: 40px;
+.address-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 40px;
 }
+
 address a {
   display: flex;
   color: var(--secondary-text-color);
@@ -267,7 +272,7 @@ button {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  
+ 
 }
 
 img {
