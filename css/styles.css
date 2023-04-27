@@ -22,6 +22,7 @@ body {
 
 /* Логотипи */
 .logo {
+  display: inline-block;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   letter-spacing: 0.03em;
@@ -90,7 +91,7 @@ body {
 }
 
 /* contacts */
-address .list {
+.address .list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -210,6 +211,13 @@ width: calc((100% - 72px) / 4)
 .section-workers {
   background-color: #ffffff;
 }
+.team-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
 .section-portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -226,6 +234,7 @@ width: calc((100% - 72px) / 4)
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  max-width: 264px;
 }
 /* Кнопки */
 button {
