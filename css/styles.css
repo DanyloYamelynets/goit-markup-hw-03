@@ -38,6 +38,7 @@ body {
   font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
+  margin-right: 76px
 }
 .logo-footer {
   color: var(--secondary-white-color);
@@ -50,23 +51,40 @@ body {
 }
 .link {
   text-decoration: none;
+  
 }
 .list {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
 }
 /* Хедер */
 .page-header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc
 }
 /* site nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+display: flex;
+}
+.site-nav .item + .item {
+margin-left: 40px;
+}
 .site-nav a {
+  display: block;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .site-nav a:hover,
 .site-nav a:focus {
@@ -74,14 +92,21 @@ body {
 }
 
 /* contacts */
+.address .item + .item {
+margin-left: 40px;
+}
 address a {
+  display: block;
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  text-decoration: none;
+  
 }
 .address{
 font-style: normal;
+margin: auto;
 }
 
 .address .link:hover,
@@ -169,6 +194,7 @@ font-style: normal;
   margin: 0;
   padding-top: 47px;
   list-style: none;
+  
 }
 /* Футер */
 .footer-description {
@@ -234,7 +260,6 @@ button {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
