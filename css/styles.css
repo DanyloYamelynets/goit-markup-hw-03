@@ -105,7 +105,7 @@ img {
   gap: 40px;
 }
 address a {
-  /* display: flex; */
+  display: flex;
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -339,6 +339,9 @@ button {
 }
 
 /* контейнер */
+.page-header .container {
+  display: flex;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
