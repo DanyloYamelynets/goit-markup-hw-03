@@ -98,15 +98,14 @@ img {
 
 /* contacts */
 .address-list {
-  padding: 0;
+  /* padding: 0;
   margin: 0;
-  justify-content: center;
-  list-style: none;
+  list-style: none; */
   display: flex;
   gap: 40px;
 }
 address a {
-  display: flex;
+  /* display: flex; */
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
