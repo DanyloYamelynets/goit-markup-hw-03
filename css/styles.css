@@ -70,6 +70,9 @@ img {
 }
 
 /* Хедер */
+.header-nav {
+  display: flex;
+}
 .page-header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -339,9 +342,6 @@ button {
 }
 
 /* контейнер */
-.page-header .container {
-  display: flex;
-}
 .container {
   margin-left: auto;
   margin-right: auto;
