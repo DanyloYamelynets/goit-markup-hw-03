@@ -71,7 +71,7 @@ img {
 
 /* Хедер */
 .header-nav {
-  display: flex;
+  /* display: flex; */
 }
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -108,7 +108,6 @@ img {
   gap: 40px;
 }
 address a {
-  display: flex;
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
