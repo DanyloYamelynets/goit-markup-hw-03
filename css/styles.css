@@ -68,7 +68,9 @@ footer .logo {
 img {
   display: block;
 }
-
+p {
+  margin: 0;
+}
 /* Хедер */
 .header-nav {
   display: flex;
@@ -79,7 +81,6 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
-  width: 100%;
 }
 .site-nav {
   display: flex;
@@ -107,6 +108,7 @@ img {
   list-style: none;
   display: flex;
   gap: 40px;
+  align-items: center;
 }
 address a {
   color: var(--secondary-text-color);
@@ -118,6 +120,7 @@ address a {
 .address {
   font-style: normal;
   margin-left: auto;
+  display: flex;
 }
 .address .link:hover,
 .address .link:focus {
